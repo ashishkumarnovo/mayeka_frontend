@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="icon" href="images/favicons/favicon-32x32.png" type="image/png" sizes="16x16">
+
+      <!-- font awesome icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous">
+
+      <!-- font  -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+      <!--Main css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css"/> 
+      
+      <title>Mayeka - Login</title>
+</head>
+<body>
+
+      <section class="bgImg">
+            <div class="container-fluid">
+                  <div class="row">
+
+                        <div class="width80 d-flex bg-white">
+                              <div class="col-12 col-sm-12 col-md-7 bgf3">
+                                    <div class="features">
+                                          <img class="logo" src="images/logo.png">
+
+                                          <h4 class="text-center">Latest At Mayeka</h4>
+                                          <div class="features_list">
+                                                <ul>
+                                                      <li>
+                                                            <img class="arrowPointer" src="images/Group249.png">
+                                                            <div class="f_listItem">
+                                                                  <img src="images/ab-testing.png">
+                                                                  <span>A/B test sms feature</span>
+                                                            </div>
+                                                      </li>
+                                                      <li>
+                                                            <img class="arrowPointer" src="images/Group249.png">
+                                                            <div class="f_listItem">
+                                                                  <img src="images/sms.png">
+                                                                  <span>Split push sms</span>
+                                                            </div>
+                                                      </li>
+                                                      <li>
+                                                            <img class="arrowPointer" src="images/Group249.png">
+                                                            <div class="f_listItem">
+                                                                  <img src="images/search.png">
+                                                                  <span>Smart url conversion tracking</span>
+                                                            </div>
+                                                      </li>
+                                                </ul>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-12 col-sm-12 col-md-5">
+                                    <div class="loginForm">
+                                          <h3 class="text-center">Welcome Back!</h3>
+
+                                          <p>Via Social Login</p>
+                                          <div class="socialLinks">
+                                                <span class="gLogo"><img src="images/google.png"></span>
+                                                <span class="somelogo"><img src="images/group_8.png"></span>
+                                                <span class="gitlogo"><img src="images/github.png"></span>
+                                          </div>
+                                          <p class="seprator"><span>OR</span></p>
+
+                                          <form>
+                                                <div class="form-group">
+                                                      <label>Email</label>
+                                                      <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Email">
+                                                </div>
+                                                <div class="form-group">
+                                                      <label>Password</label>
+                                                      <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+                                                      <span class="toggle-password">Show</span>
+                                                      <span class="toggle-passwordH">Hide</span>
+                                                </div>
+                                                <small><a href="#">Forgot Password</a></small>
+                                                <button type="submit" class="btn btn-primary loginBtn">Login</button>
+                                          </form>
+                                          <p class="createAcc">Don't have an account? <span><a href="#">Sign Up</a></span></p>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+            </div>
+      </section>
+
+      
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+      <script>
+            $(document).ready(function() {
+
+                  $('.toggle-password').hide();
+                  $('.toggle-passwordH').hide();
+
+                  $('#InputPassword').keyup(function() 
+                  {
+                        if($('.toggle-passwordH').css("display") == "none")
+                        {
+                              $('.toggle-password').show();                              
+                        }
+
+                        if($('#InputPassword').val().length == 0)
+                        {
+                              $('.toggle-password').hide();  
+                              $('.toggle-passwordH').hide();  
+                              $("#InputPassword").attr("type", "password");
+                        }
+                  });
+
+                  $('form .form-group span').click(function() {
+                        var input = $("#InputPassword");
+                        if (input.attr("type") === "password") {
+                              input.attr("type", "text");
+                              $('.toggle-password').hide();
+                              $('.toggle-passwordH').show();
+                        } else {
+                              input.attr("type", "password");
+                              $('.toggle-password').show();
+                              $('.toggle-passwordH').hide();
+                        }
+                  });
+            });
+      </script>
+
+</body>
+</html>
