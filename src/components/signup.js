@@ -4,7 +4,7 @@ import "../asserts/css/style.css"
 import "../asserts/css/swiper.css"
 import Swiper from "swiper";
 
-export default function Singup(){
+export default function Signup(){
       
       useEffect(() => {
             document.title = 'Mayeka - Sign up';
@@ -63,7 +63,7 @@ export default function Singup(){
                         prevEl: '.swiper-button-prev',
                   },
                   breakpoints: {
-                        575: {
+                        767: {
                               loop: false,
                               effect: 'coverflow',
                               grabCursor: true,
@@ -85,7 +85,7 @@ export default function Singup(){
 
             new Swiper('.brands_swiper', {
                   slidesPerView: 'auto',
-                  initialSlide: 1,
+                  initialSlide: 0,
                   speed: 1000,
                   spaceBetween: 20,
                   loop: false,
@@ -108,7 +108,7 @@ export default function Singup(){
                               grabCursor: true,
                               centeredSlides: true,
                               slidesPerView: 'auto',
-                              spaceBetween: 0,
+                              spaceBetween: 20,
                               coverflowEffect: {
                                     rotate: 0,
                                     stretch: 0,
@@ -129,7 +129,7 @@ export default function Singup(){
             <div className="container-fluid">
                   <div className="row">
 
-                        <div className="width80 d-flex bg-white">
+                        <div className="width80 d-flex bg-white flex-wrap">
                               <div className="col-12 col-sm-12 col-md-7 bgf3">
                                     <div className="features f_signup">
                                           <img className="logo" src={require("../asserts/images/logo.png")} />
@@ -219,7 +219,7 @@ export default function Singup(){
                               <div className="brands_swiper w-100">
                                     <div className="swiper-wrapper">
                                           
-                                          <div className="swiper-slide" style={{margin: "0px 10px"}}>
+                                          <div className="swiper-slide" >
                                                 <div className="showcase">
                                                       <div className="d-flex flex-wrap">
                                                             <img src={require("../asserts/images/google-pay.png")} />
@@ -233,7 +233,7 @@ export default function Singup(){
                                                 </div>
                                           </div>
 
-                                          <div className="swiper-slide" style={{margin: "0px 10px"}}>
+                                          <div className="swiper-slide" >
                                                 <div className="showcase">
                                                       <div className="d-flex flex-wrap">
                                                             <img src={require("../asserts/images/google-pay.png")} />
@@ -247,7 +247,7 @@ export default function Singup(){
                                                 </div>
                                           </div>
 
-                                          <div className="swiper-slide" style={{margin: "0px 10px"}}>
+                                          <div className="swiper-slide" >
                                                 <div className="showcase">
                                                       <div className="d-flex flex-wrap">
                                                             <img src={require("../asserts/images/google-pay.png")} />
@@ -440,7 +440,7 @@ export default function Singup(){
                         <div className="testimonials_slide w-100">
                               <div className="swiper-wrapper">
 
-                                    <div className="swiper-slide" style={{width:'65%'}}>
+                                    <div className="swiper-slide" >
                                           <div className="boxes d-flex">
                                                 <div className="personImg">
                                                       <img src={require("../asserts/images/person12.png")} />
@@ -457,7 +457,7 @@ export default function Singup(){
                                           </div>
                                     </div>
 
-                                    <div className="swiper-slide" style={{width:'65%'}}>
+                                    <div className="swiper-slide" >
                                           <div className="boxes d-flex">
                                                 <div className="personImg">
                                                       <img src={require("../asserts/images/person11.png")} />
@@ -474,7 +474,7 @@ export default function Singup(){
                                           </div>
                                     </div>
 
-                                    <div className="swiper-slide" style={{width:'65%'}}>
+                                    <div className="swiper-slide" >
                                           <div className="boxes d-flex">
                                                 <div className="personImg">
                                                       <img src={require("../asserts/images/person12.png")} />

@@ -5,7 +5,7 @@ import "../asserts/css/style.css"
 export default function Login(){
       
       useEffect(() => {
-
+            document.title = 'Mayeka - Login';
             $('.toggle-password').hide();
             $('.toggle-passwordH').hide();
 
@@ -46,7 +46,7 @@ export default function Login(){
                 <div className="container-fluid">
                     <div className="row">
 
-                        <div className="width80 d-flex bg-white">
+                        <div className="width80 d-flex bg-white flex-wrap">
                         <div className="col-12 col-sm-12 col-md-7 bgf3">
                         <div className="features">
                               <img className="logo" src={require("../asserts/images/logo.png")} />
